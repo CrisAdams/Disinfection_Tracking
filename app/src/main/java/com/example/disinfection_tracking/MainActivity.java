@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-//Lines 15 - 56 written by Cristeen Olivero
+//Lines 15 - 57 written by Cristeen Olivero
 
     //variables for User ID, password, button, and Login Attempt Counter
     private EditText userId;
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         if ((userID.equals("Colivero")) && (userPassword.equals("2468"))) {
             Intent Intent = new Intent(MainActivity.this, OrderScanActivity.class);
             startActivity(Intent);
+
         //if unable to validate User ID or password disable login button after 3 attempts
         }else{
             counter--;

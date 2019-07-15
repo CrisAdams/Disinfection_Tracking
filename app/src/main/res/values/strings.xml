@@ -2,4 +2,6 @@
     <string name="app_name">Disinfection_Tracking</string>
     <string name="scan_order_barcode">Scan Order Barcode</string>
     <string name="login">Login</string>
+    <string name="scan">Scan</string>
+    <string name="scan_order_qr_code">Scan Order QR Code</string>
 </resources>
