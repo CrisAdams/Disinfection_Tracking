@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.066" />
 
     <TextView
         android:id="@+id/patient"
@@ -40,10 +40,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <TextView
         android:id="@+id/dob"
@@ -60,30 +60,30 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.195" />
 
     <TextView
-        android:id="@+id/mrn"
-        android:layout_width="149dp"
-        android:layout_height="29dp"
+        android:id="@+id/accessionNumber"
+        android:layout_width="183dp"
+        android:layout_height="31dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Medical Record:"
+        android:text="Accession Number:"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.366" />
+        app:layout_constraintVertical_bias="0.393" />
 
     <TextView
         android:id="@+id/examDate"
@@ -100,10 +100,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.492" />
+        app:layout_constraintVertical_bias="0.487" />
 
     <TextView
         android:id="@+id/exam"
@@ -120,10 +120,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <TextView
         android:id="@+id/pName"
@@ -140,10 +140,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toEndOf="@+id/patient"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267" />
+        app:layout_constraintVertical_bias="0.218" />
 
     <TextView
         android:id="@+id/pDOB"
@@ -160,27 +160,28 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toEndOf="@+id/dob"
         app:layout_constraintTop_toBottomOf="@+id/pName"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
-        android:id="@+id/pMRN"
+        android:id="@+id/pAccessionNumber"
         android:layout_width="137dp"
         android:layout_height="29dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text=""
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/mrn"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toEndOf="@+id/accessionNumber"
         app:layout_constraintTop_toBottomOf="@+id/pDOB"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.178" />
 
     <TextView
         android:id="@+id/pExamDate"
@@ -191,14 +192,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="288dp"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintHorizontal_bias="0.815"
         app:layout_constraintStart_toEndOf="@+id/examDate"
-        app:layout_constraintTop_toBottomOf="@+id/pMRN"
-        app:layout_constraintVertical_bias="0.104" />
+        app:layout_constraintTop_toBottomOf="@+id/pAccessionNumber"
+        app:layout_constraintVertical_bias="0.441" />
 
     <TextView
         android:id="@+id/pExam"
@@ -213,10 +214,10 @@
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toEndOf="@+id/exam"
         app:layout_constraintTop_toBottomOf="@+id/pExamDate"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <Button
         android:id="@+id/confirmBtn"
@@ -238,8 +239,42 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.839" />
 
+    <TextView
+        android:id="@+id/mrn"
+        android:layout_width="163dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Medical Record:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/accessionNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
 
-
+    <TextView
+        android:id="@+id/pMrn"
+        android:layout_width="142dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pAccessionNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/mrn"
+        app:layout_constraintTop_toBottomOf="@+id/pDOB"
+        app:layout_constraintVertical_bias="0.476" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

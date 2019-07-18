@@ -14,8 +14,8 @@ public class OrderResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_result);
         Intent intent = getIntent();
-        String ass = intent.getExtras().getString("accessionNumber");
-        TextView mrnText = findViewById(R.id.pMRN);
-        mrnText.setText(ass);
+        String accession = intent.getExtras().getString("accessionNumber");
+        TextView mrnText = findViewById(R.id.pAccessionNumber);
+        mrnText.setText(accession);
 }
 }
