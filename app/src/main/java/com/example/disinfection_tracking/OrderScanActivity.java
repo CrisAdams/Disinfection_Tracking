@@ -46,7 +46,6 @@ private TextView pName;
                     JSONObject object = new JSONObject(result.getContents());
                     //pName.setText(object.getString("name"));
 
-                   /
 
                 } catch (JSONException e) {
                     e.printStackTrace();
