@@ -1,6 +1,7 @@
 package com.example.disinfection_tracking;
 
-//Lines 4 - 56 written by Cristeen Olivero
+//Lines 5 - 53 written by Cristeen Olivero
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,9 +12,6 @@ import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class OrderScanActivity extends AppCompatActivity {
 private IntentIntegrator qrScan;
