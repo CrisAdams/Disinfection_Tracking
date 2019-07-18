@@ -22,7 +22,7 @@ private TextView pName;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_scan);
-        pName = (TextView)findViewById(R.id.pName);
+       // pName = (TextView)findViewById(R.id.pName);
 
         qrScan = new IntentIntegrator(this);
 
@@ -40,12 +40,13 @@ private TextView pName;
             if(result.getContents() ==null) {
                 Toast.makeText(this, "No Results Found", Toast.LENGTH_SHORT).show();
             }else {
-                try {
+                Intent Intent = new Intent(OrderScanActivity.this, OrderResult.class);
+                //startActivity(Intent);
+                Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();                try {
                     JSONObject object = new JSONObject(result.getContents());
-                    pName.setText(object.getString("name"));
+                    //pName.setText(object.getString("name"));
 
-                   // Intent Intent = new Intent(OrderScanActivity.this, OrderResult.class);
-                    //startActivity(Intent);
+                   /
 
                 } catch (JSONException e) {
                     e.printStackTrace();
