@@ -16,13 +16,12 @@ import org.json.JSONObject;
 
 public class OrderScanActivity extends AppCompatActivity {
 private IntentIntegrator qrScan;
-private TextView pName;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_scan);
-       // pName = (TextView)findViewById(R.id.pName);
 
         qrScan = new IntentIntegrator(this);
 
@@ -40,18 +39,14 @@ private TextView pName;
             if(result.getContents() ==null) {
                 Toast.makeText(this, "No Results Found", Toast.LENGTH_SHORT).show();
             }else {
-                Intent Intent = new Intent(OrderScanActivity.this, OrderResult.class);
-                //startActivity(Intent);
-                Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();                try {
-                    JSONObject object = new JSONObject(result.getContents());
-                    //pName.setText(object.getString("name"));
 
+                String accessionNumber = result.getContents();
+                Intent intent = new Intent (this, OrderResultActivity.class);
+                intent.putExtra("accessionNumber", accessionNumber);
+                startActivity(intent);
 
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(this, result.getContents(), Toast.LENGTH_SHORT).show();
                 }
-            }
+
         } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
