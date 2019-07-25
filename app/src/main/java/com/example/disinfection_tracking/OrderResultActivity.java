@@ -16,8 +16,12 @@ public class OrderResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_result);
         Intent intent = getIntent();
-        String accession = intent.getExtras().getString("accessionNumber");
-        TextView mrnText = findViewById(R.id.pAccessionNumber);
-        mrnText.setText(accession);
+        String patient = intent.getExtras().getString("patient");
+        TextView mrnText = findViewById(R.id.pName);
+        mrnText.setText(patient);
+
+        String dob = intent.getExtras().getString( "dob");
+        TextView dobText = findViewById(R.id.pDOB);
+        dobText.setText(dob);
 }
 }
