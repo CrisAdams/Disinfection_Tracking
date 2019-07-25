@@ -39,17 +39,11 @@ private IntentIntegrator qrScan;
                 Toast.makeText(this, "No Results Found", Toast.LENGTH_SHORT).show();
             }else {
 
-                String patient = result.getContents();
+                String accessionNumber = result.getContents();
                 Intent intent = new Intent (this, OrderResultActivity.class);
-                intent.putExtra("patient", patient);
-                /*Bundle extras = new Bundle();
-                extras.putString("patient", "patient");
-                extras.putString("dob", "dob");
-                intent.putExtras(extras);*/
+                intent.putExtra("accessionNumber", accessionNumber);
 
-                String dob = result.getContents();
-                Intent intent1 = new Intent(this, OrderResultActivity.class);
-                intent.putExtra(    "dob", dob);
+
                 startActivity(intent);
 
                 }
