@@ -6,10 +6,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class OrderResultActivity extends AppCompatActivity {
+
+    public void clickConfirm(View view) {
+        Intent Intent = new Intent(OrderResultActivity.this, TransducerActivity.class);
+        startActivity(Intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +29,8 @@ public class OrderResultActivity extends AppCompatActivity {
         mrnText.setText(accessionNumber);
 
 
+    }
 }
-}
+
+
+
