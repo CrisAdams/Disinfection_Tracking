@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+//Lines 8 - 15 written by Cristeen Olivero
+
 public class DisinfectionScanActivity extends AppCompatActivity {
 
     @Override
