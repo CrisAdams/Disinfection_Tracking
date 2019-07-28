@@ -1,6 +1,6 @@
 package com.example.disinfection_tracking;
 
-//Lines 5 - 53 written by Cristeen Olivero
+//Lines 5 - 55 written by Cristeen Olivero
 
 import androidx.appcompat.app.AppCompatActivity;
 
