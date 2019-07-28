@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TransducerActivity"></activity>
+        <activity android:name=".DisinfectionScanActivity"></activity>
+        <activity android:name=".TransducerActivity" />
         <activity android:name=".OrderResultActivity" />
         <activity android:name=".OrderScanActivity" />
         <activity android:name=".MainActivity">

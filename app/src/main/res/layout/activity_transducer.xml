@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.118" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/saveBtn"
         android:layout_width="143dp"
         android:layout_height="58dp"
         android:layout_marginTop="8dp"
@@ -53,6 +53,7 @@
         android:background="@color/colorPrimary"
         android:text="SAVE"
         android:textColor="@android:color/white"
+        android:onClick="clickSave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
