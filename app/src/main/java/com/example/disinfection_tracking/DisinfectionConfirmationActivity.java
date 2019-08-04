@@ -22,8 +22,10 @@ public class DisinfectionConfirmationActivity extends AppCompatActivity {
     }
 
     public void clickExit(View view) {
-        Intent Intent = new Intent(DisinfectionConfirmationActivity.this, MainActivity.class);
-        startActivity(Intent);
+        Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+        homeIntent.addCategory( Intent.CATEGORY_HOME );
+        homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(homeIntent);
     }
 
 }
