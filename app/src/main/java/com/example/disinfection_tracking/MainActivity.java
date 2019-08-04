@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-//Lines 15 - 57 written by Cristeen Olivero
+//Lines 15 - 57 written by Cristeen Adams
 
     //variables for User ID, password, button, and Login Attempt Counter
     private EditText userId;

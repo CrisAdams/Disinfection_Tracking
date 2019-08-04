@@ -2,7 +2,7 @@ package com.example.disinfection_tracking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//Lines 5 - 55 written by Cristeen Adams
+//Lines 5 - 56 written by Cristeen Adams
 
 import android.os.Bundle;
 
