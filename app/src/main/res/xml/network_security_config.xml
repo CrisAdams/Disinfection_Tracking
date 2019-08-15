@@ -3,5 +3,7 @@
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">10.0.2.2</domain> <!-- Debug port -->
         <domain includeSubdomains="true">db_connect</domain>
+        <domain includeSubdomains="true">db_connect_transducer_insert</domain>
+        <domain includeSubdomains="true">db_connect_disinfection_insert</domain>
     </domain-config>
 </network-security-config>
