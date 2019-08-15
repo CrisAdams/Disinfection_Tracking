@@ -1,17 +1,20 @@
 package com.example.disinfection_tracking;
 
-//lines 5-32 written by Cristeen Adams
+//lines 5-141 written by Cristeen Adams
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+
+
 import android.widget.TextView;
-import android.widget.Toast;
+
+
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,9 +37,11 @@ public class OrderResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_result);
 
+        //Get accession number from QR code scanned
         Intent intent = getIntent();
         accessionNumber = intent.getExtras().getString("accessionNumber");
 
+        //Download JSON file from network call
         downloadJSON("http://10.0.2.2/db_connect.php");
     }
 
@@ -52,7 +57,7 @@ public class OrderResultActivity extends AppCompatActivity {
         @Override
                 protected void onPostExecute(String s) {
             super.onPostExecute(s);
-                //Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
+
                 try {
                     loadIntoListView(s);
                 } catch (JSONException e) {
@@ -79,15 +84,13 @@ public class OrderResultActivity extends AppCompatActivity {
     DownloadJSON getJSON = new DownloadJSON();
         getJSON.execute();
 
-
-
-
     }
 
+    //Create arrayList of JSON objects downloaded
     private void loadIntoListView(String json) throws JSONException {
         List<Patient> patientList = new ArrayList<>();
         JSONArray jsonArray = new JSONArray(json);
-        //String[] info = new String[jsonArray.length()];
+
         for (int i=0; i<jsonArray.length(); i++) {
 
             JSONObject obj = jsonArray.getJSONObject(i);
@@ -102,15 +105,33 @@ public class OrderResultActivity extends AppCompatActivity {
            patientList.add(patient);
         }
 
+        //Select patient associated with accession number scanned and display patient and exam info
         for (Patient patient: patientList) {
             if (patient.getACCESSIONNUMBER().equals(accessionNumber)) {
 
                 TextView pName = findViewById(R.id.pName);
                 pName.setText(patient.getFIRSTNAME() + " " + patient.getLASTNAME());
+
+                TextView pDOB = findViewById(R.id.pDOB);
+                pDOB.setText(patient.getDATEOFBIRTH());
+
+                TextView pMRN = findViewById(R.id.pMrn);
+                pMRN.setText(patient.getMEDICALRECORDNUMBER());
+
+                TextView pAccessionNumber = findViewById(R.id.pAccessionNumber);
+                pAccessionNumber.setText(patient.getACCESSIONNUMBER());
+
+                TextView pExamDate = findViewById(R.id.pExamDate);
+                pExamDate.setText(patient.getORDERDATE());
+
+                TextView pExam = findViewById(R.id.pExam);
+                pExam.setText(patient.getEXAMDESCRIPTION());
             }
         }
 
     }
+
+    //Got to next activity
     public void clickConfirm(View view) {
         Intent Intent = new Intent(OrderResultActivity.this, TransducerActivity.class);
         startActivity(Intent);

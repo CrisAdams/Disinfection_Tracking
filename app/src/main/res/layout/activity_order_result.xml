@@ -137,14 +137,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="John Smith"
+        android:text=""
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toEndOf="@+id/patient"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <TextView
         android:id="@+id/pDOB"
@@ -156,14 +156,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="05/06/1980"
+        android:text=""
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toEndOf="@+id/dob"
         app:layout_constraintTop_toBottomOf="@+id/pName"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.024" />
 
     <TextView
         android:id="@+id/pMrn"
@@ -175,14 +175,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="81895679"
+        android:text=""
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/pAccessionNumber"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toEndOf="@+id/mrn"
         app:layout_constraintTop_toBottomOf="@+id/pDOB"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.365" />
 
     <TextView
         android:id="@+id/pAccessionNumber"
@@ -194,14 +194,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
-        android:text="0101"
+        android:text=""
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toEndOf="@+id/accessionNumber"
         app:layout_constraintTop_toBottomOf="@+id/pDOB"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <TextView
         android:id="@+id/pExamDate"
@@ -213,33 +213,33 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="07/10/2019"
+        android:text=""
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintHorizontal_bias="0.624"
         app:layout_constraintStart_toEndOf="@+id/examDate"
         app:layout_constraintTop_toBottomOf="@+id/pAccessionNumber"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.047" />
 
     <TextView
         android:id="@+id/pExam"
-        android:layout_width="158dp"
-        android:layout_height="28dp"
+        android:layout_width="182dp"
+        android:layout_height="26dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="RUQ Ultrasound"
+        android:text=""
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toEndOf="@+id/exam"
         app:layout_constraintTop_toBottomOf="@+id/pExamDate"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.057" />
 
     <Button
         android:id="@+id/confirmBtn"
